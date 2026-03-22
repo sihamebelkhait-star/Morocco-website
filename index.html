@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lunara Boutique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 90vh;
+      background: linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+      ),
+      url("images/foto 32.jpeg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .btn-main {
+      background-color: #d9a441;
+      border: none;
+      color: #fff;
+      padding: 14px 32px;
+      font-weight: 500;
+    }
+
+    .btn-outline-light {
+      padding: 14px 32px;
+    }
+
+    /* QUICK SECTIONS */
+    .quick-box {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 35px 20px;
+      transition: 0.3s ease;
+    }
+
+    .quick-box:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    }
+
+    .quick-box i {
+      font-size: 2.4rem;
+      color: #d9a441;
+    }
+
+    .quick-box h5 {
+      margin-top: 15px;
+      font-weight: 500;
+    }
+
+    /* SEASON BANNER */
+    .season-banner {
+      background: linear-gradient(135deg, #f5e6d0, #fff);
+      border-radius: 25px;
+      padding: 60px 30px;
+    }
+
+    /* REVIEWS */
+    .review {
+      background: #fff;
+      border-radius: 18px;
+      padding: 30px;
+    }
+
+    .stars {
+      color: #d9a441;
+    }
+    .bi {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.bi:hover {
+  color: #d9a441;
+}
+/* ===== SHOP SECTION ===== */
+
+.shop-section {
+  padding: 20px;
+}
+
+.product-card {
+  width: 300px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+}
+
+.product-img {
+  width: 100px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  
+}
+
+
+</style>
+</head>
+
+<body>
+
+    <!-- TOP HEADER -->
+<section class="py-3 bg-white border-bottom">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+  
+        <!-- BRAND -->
+        <div class="fw-bold fs-4" style="letter-spacing:1px;">
+          Lunara
+        </div>
+  
+        <!-- ACTION ICONS -->
+        <div class="d-flex align-items-center gap-4">
+          <i class="bi bi-search fs-5"></i>
+          <i class="bi bi-person fs-5"></i>
+          <i class="bi bi-bag fs-5 position-relative">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
+              0
+            </span>
+          </i>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+<!-- HERO SECTION -->
+<section class="hero text-white">
+  <div class="container text-center">
+    <h1>Lunara Boutique</h1>
+    <p class="mt-3">Elegance Designed for the Modern Woman</p>
+
+    <div class="mt-4">
+      <a href="#shop" class="btn btn-main me-3">Shop Now</a>
+      <a href="#contact" class="btn btn-outline-light">Contact Us</a>
+    </div>
+  </div>
+</section>
+<!-- QUICK SECTIONS -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4 text-center">
+
+      <div class="col-md-4">
+        <div class="quick-box">
+          <i class="bi bi-stars"></i>
+          <h5>New Arrivals</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="quick-box">
+          <i class="bi bi-fire"></i>
+          <h5>Best Sellers</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="quick-box">
+          <i class="bi bi-percent"></i>
+          <h5>Sales</h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SEASONAL OFFER -->
+<section class="py-5">
+  <div class="container">
+    <div class="season-banner text-center">
+      <h2 class="fw-bold">Seasonal Collection 2026</h2>
+      <p class="mt-3">Exclusive styles crafted for elegance and comfort</p>
+      <a href="#" class="btn btn-main mt-3">Discover More</a>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="py-5">
+  <div class="container">
+    <h3 class="text-center mb-4">Our Happy Customers</h3>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="review">
+          <p>"Amazing quality and elegant design. I loved everything!"</p>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="review">
+          <p>"Fast delivery and beautiful packaging. Highly recommended."</p>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="review">
+          <p>"Perfect styles for modern women. I will order again."</p>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SHOP SECTION -->
+<section id="shop" class="py-5" style="background:#faf9f7;">
+  <div class="container">
+
+    <!-- TITLE -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Shop Our Collection</h2>
+      <p class="text-muted">Carefully selected pieces for modern women</p>
+    </div>
+
+    <div class="row">
+
+      <!-- FILTERS -->
+      <div class="col-lg-3 mb-4">
+        <div class="p-4 bg-white rounded-4">
+          <h5 class="mb-4">Filter</h5>
+
+          <div class="mb-3">
+            <label class="form-label">Category</label>
+            <select class="form-select">
+              <option>All</option><option>Dresses</option><option>Bags</option>
+              <option>Shoes</option><option>Accessories</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Price</label>
+            <select class="form-select">
+              <option>All</option><option>Under $50</option>
+              <option>$50 – $100</option><option>Above $100</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Size</label>
+            <select class="form-select">
+              <option>All</option><option>S</option><option>M</option>
+              <option>L</option><option>XL</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Color</label>
+            <select class="form-select">
+              <option>All</option><option>Beige</option>
+              <option>Black</option><option>White</option><option>Pink</option>
+            </select>
+          </div>
+
+          <button class="btn w-100" style="background:#d9a441;color:#fff;">
+            Apply Filters
+          </button>
+          <!-- EXTRA SECTION UNDER FILTER -->
+<div class="mt-4 p-3 bg-white rounded-4 text-center">
+
+  <h6 class="fw-bold mb-2">Special Offer</h6>
+
+  <p class="text-muted small mb-3">
+    Free delivery on orders over $100
+  </p>
+
+  <img src="images/foto 40.jpeg"
+       class="img-fluid rounded-3 mb-3"
+       alt="Special Offer">
+
+  <button class="btn btn-sm w-100"
+          style="background:#d9a441;color:#fff;">
+    Shop Now
+  </button>
+
+</div>
+
+        </div>
+      </div>
+
+      <!-- PRODUCTS -->
+      <div class="col-lg-9">
+        <div class="row g-4">
+
+          <!-- PRODUCT 1 -->
+          <div class="col-md-6">
+            <div class="bg-white rounded-4 p-3 text-center h-100 product-card">
+              <img src="images/foto 35.jpeg" class="product-img rounded-3 mb-3" alt="Elegant Dress">
+              <h6 class="mb-1">Elegant Dress</h6>
+              <p class="fw-semibold" style="color:#d9a441;">$89.00</p>
+              <button class="btn btn-sm w-100" style="background:#d9a441;color:#fff;">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- PRODUCT 2 -->
+          <div class="col-md-6">
+            <div class="bg-white rounded-4 p-3 text-center h-100 product-card">
+              <img src="images/foto 33.jpeg" class="product-img rounded-3 mb-3" alt="Luxury Handbag">
+              <h6 class="mb-1">Luxury Handbag</h6>
+              <p class="fw-semibold" style="color:#d9a441;">$120.00</p>
+              <button class="btn btn-sm w-100" style="background:#d9a441;color:#fff;">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- PRODUCT 3 -->
+          <div class="col-md-6">
+            <div class="bg-white rounded-4 p-3 text-center h-100 product-card">
+              <img src="images/foto 36.jpeg" class="product-img rounded-3 mb-3" alt="Modern Shoes">
+              <h6 class="mb-1">Modern Shoes</h6>
+              <p class="fw-semibold" style="color:#d9a441;">$75.00</p>
+              <button class="btn btn-sm w-100" style="background:#d9a441;color:#fff;">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- PRODUCT 4 -->
+          <div class="col-md-6">
+            <div class="bg-white rounded-4 p-3 text-center h-100 product-card">
+              <img src="images/foto 37.jpeg" class="product-img rounded-3 mb-3" alt="Satin Evening Dress">
+              <h6 class="mb-1">Satin Evening Dress</h6>
+              <p class="fw-semibold" style="color:#d9a441;">$140.00</p>
+              <button class="btn btn-sm w-100" style="background:#d9a441;color:#fff;">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- PRODUCT 5 -->
+          <div class="col-md-6">
+            <div class="bg-white rounded-4 p-3 text-center h-100 product-card">
+              <img src="images/foto 39.jpeg" class="product-img rounded-3 mb-3" alt="Minimal Necklace">
+              <h6 class="mb-1">Minimal Necklace</h6>
+              <p class="fw-semibold" style="color:#d9a441;">$39.00</p>
+              <button class="btn btn-sm w-100" style="background:#d9a441;color:#fff;">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- PRODUCT 6 -->
+          <div class="col-md-6">
+            <div class="bg-white rounded-4 p-3 text-center h-100 product-card">
+              <img src="images/foto 38.jpeg" class="product-img rounded-3 mb-3" alt="Casual Chic Set">
+              <h6 class="mb-1">Casual Chic Set</h6>
+              <p class="fw-semibold" style="color:#d9a441;">$99.00</p>
+              <button class="btn btn-sm w-100" style="background:#d9a441;color:#fff;">Add to Cart</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <!-- SEASONAL OFFER -->
+<section class="py-5" style="background:linear-gradient(135deg,#f6efe6,#ffffff);">
+    <div class="container">
+  
+      <div class="row align-items-center g-4">
+  
+        <!-- TEXT -->
+        <div class="col-lg-6">
+          <span class="badge mb-3" style="background:#d9a441;">
+            Limited Time
+          </span>
+  
+          <h2 class="fw-bold mt-3">
+            Seasonal Collection 2026
+          </h2>
+  
+          <p class="text-muted mt-3">
+            Discover exclusive pieces designed especially for this season.
+            Elegant, feminine, and carefully selected to elevate your style.
+          </p>
+  
+          <div class="mt-4">
+            <a href="#shop" class="btn me-3"
+               style="background:#d9a441;color:#fff;padding:12px 30px;">
+              Shop the Collection
+            </a>
+  
+            <a href="#contact" class="btn btn-outline-dark px-4 py-2">
+              Contact Us
+            </a>
+          </div>
+        </div>
+  
+        <!-- VISUAL -->
+        <div class="col-lg-6 text-center">
+          <img src="images/foto 30.jpeg"
+               alt="Seasonal Collection"
+               class="img-fluid rounded-4"
+               style="max-height:450px; object-fit:cover;">
+        </div>
+        </div>
+  
+      </div>
+  
+    </div>
+  </section>
+<!-- REVIEWS SECTION -->
+<section class="py-5" style="background:#faf9f7;">
+    <div class="container">
+  
+      <!-- TITLE -->
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">What Our Customers Say</h2>
+        <p class="text-muted">Real experiences from women who love our products</p>
+      </div>
+  
+      <div class="row g-4">
+  
+        <!-- REVIEW 1 -->
+        <div class="col-md-4">
+          <div class="bg-white p-4 rounded-4 h-100 text-center">
+            <div class="mb-3" style="color:#d9a441;font-size:1.2rem;">
+              ★★★★★
+            </div>
+            <p class="text-muted">
+              “Amazing quality and elegant style. I was impressed from the first order.”
+            </p>
+            <h6 class="fw-semibold mt-3">Sarah M.</h6>
+          </div>
+        </div>
+  
+        <!-- REVIEW 2 -->
+        <div class="col-md-4">
+          <div class="bg-white p-4 rounded-4 h-100 text-center">
+            <div class="mb-3" style="color:#d9a441;font-size:1.2rem;">
+              ★★★★★
+            </div>
+            <p class="text-muted">
+              “Fast delivery and beautiful packaging. Everything feels premium.”
+            </p>
+            <h6 class="fw-semibold mt-3">Lina K.</h6>
+          </div>
+        </div>
+  
+        <!-- REVIEW 3 -->
+        <div class="col-md-4">
+          <div class="bg-white p-4 rounded-4 h-100 text-center">
+            <div class="mb-3" style="color:#d9a441;font-size:1.2rem;">
+              ★★★★★
+            </div>
+            <p class="text-muted">
+              “Perfect fit and very comfortable. I will definitely order again.”
+            </p>
+            <h6 class="fw-semibold mt-3">Amal R.</h6>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+<!-- About Us Section -->
+<section id="about" class="py-4 bg-light">
+    <div class="container">
+      <div class="row align-items-center g-5">
+  
+        <!-- Image -->
+        <div class="col-md-4">
+          <img src="images/foto 43.jpeg" class="img-fluid rounded-4 shadow" alt="About us">
+        </div>
+  
+        <!-- Text -->
+        <div class="col-md-8">
+          <h6 class="text-uppercase text-muted mb-2">About Us</h6>
+          <h2 class="fw-bold mb-4">
+            Elegance Inspired by the Seasons
+          </h2>
+  
+          <p class="text-muted mb-3">
+            Our brand was created with one goal in mind: to celebrate modern femininity
+            through carefully selected seasonal collections.
+          </p>
+  
+          <p class="text-muted mb-4">
+            Each piece is chosen for its quality, comfort, and timeless elegance,
+            helping you feel confident and beautiful every day.
+          </p>
+  
+          <div class="d-flex gap-3">
+            <a href="#shop" class="btn btn-dark px-4">
+              Explore Collection
+            </a>
+            <a href="#contact" class="btn btn-outline-dark px-4">
+              Contact Us
+            </a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+<!-- About Us Section -->
+<section id="about" class="py-4 bg-light">
+    <div class="container">
+      <div class="row align-items-center g-5">
+  
+        <!-- Image -->
+        <div class="col-md-4">
+          <img src="images/foto 44.jpeg" class="img-fluid rounded-4 shadow" alt="About us">
+        </div>
+  
+        <!-- Text -->
+        <div class="col-md-8">
+          <h6 class="text-uppercase text-muted mb-2">About Us</h6>
+          <h2 class="fw-bold mb-4">
+            Elegance Inspired by the Seasons
+          </h2>
+  
+          <p class="text-muted mb-3">
+            Our brand was created with one goal in mind: to celebrate modern femininity
+            through carefully selected seasonal collections.
+          </p>
+  
+          <p class="text-muted mb-4">
+            Each piece is chosen for its quality, comfort, and timeless elegance,
+            helping you feel confident and beautiful every day.
+          </p>
+  
+          <div class="d-flex gap-3">
+            <a href="#shop" class="btn btn-dark px-4">
+              Explore Collection
+            </a>
+            <a href="#contact" class="btn btn-outline-dark px-4">
+              Contact Us
+            </a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+<!-- WHY CHOOSE US -->
+<section class="py-5" style="background:#faf9f7;">
+    <div class="container">
+  
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Why Choose Us</h2>
+        <p class="text-muted">What makes our boutique special</p>
+      </div>
+  
+      <div class="row g-4 text-center">
+  
+        <div class="col-md-4">
+          <div class="bg-white p-4 rounded-4 h-100">
+            <div class="mb-3 fs-2" style="color:#d9a441;">★</div>
+            <h6 class="fw-semibold">Premium Quality</h6>
+            <p class="text-muted">
+              Carefully selected pieces with high-quality materials.
+            </p>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="bg-white p-4 rounded-4 h-100">
+            <div class="mb-3 fs-2" style="color:#d9a441;">🚚</div>
+            <h6 class="fw-semibold">Fast Delivery</h6>
+            <p class="text-muted">
+              Quick and reliable delivery right to your door.
+            </p>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="bg-white p-4 rounded-4 h-100">
+            <div class="mb-3 fs-2" style="color:#d9a441;">❤</div>
+            <h6 class="fw-semibold">Customer Care</h6>
+            <p class="text-muted">
+              We care about every detail and every customer.
+            </p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+<!-- NEWSLETTER -->
+<section class="py-5">
+    <div class="container">
+      <div class="bg-white rounded-4 p-5 text-center shadow-sm">
+  
+        <h3 class="fw-bold mb-3">
+          Join Our Community
+        </h3>
+  
+        <p class="text-muted mb-4">
+          Be the first to discover new collections and exclusive offers.
+        </p>
+  
+        <form class="row justify-content-center g-2">
+          <div class="col-md-4">
+            <input type="email" class="form-control"
+                   placeholder="Enter your email">
+          </div>
+          <div class="col-md-2">
+            <button type="submit"
+                    class="btn w-100"
+                    style="background:#d9a441;color:#fff;">
+              Subscribe
+            </button>
+          </div>
+        </form>
+  
+      </div>
+    </div>
+  </section>
+    <!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+  
+      <!-- Title -->
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Contact Us</h2>
+        <p class="text-muted">
+          We’d love to hear from you. Feel free to get in touch.
+        </p>
+      </div>
+  
+      <div class="row g-4 align-items-center">
+  
+        <!-- Contact Info -->
+        <div class="col-md-5">
+          <div class="p-4 bg-white rounded-4 h-100 shadow-sm">
+            <h5 class="fw-semibold mb-4">Get in Touch</h5>
+  
+            <p class="text-muted mb-3">
+              Have a question about our products, orders, or delivery?
+              Our team is here to help.
+            </p>
+  
+            <ul class="list-unstyled text-muted">
+              <li class="mb-3">
+                📍 <strong>Location:</strong> Morocco
+              </li>
+              <li class="mb-3">
+                📧 <strong>Email:</strong> contact@yourstore.com
+              </li>
+              <li class="mb-3">
+                📞 <strong>Phone:</strong> +212 6 00 00 00 00
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Contact Form -->
+        <div class="col-md-7">
+          <div class="p-4 bg-white rounded-4 shadow-sm">
+            <form>
+  
+              <div class="mb-3">
+                <label class="form-label">Your Name</label>
+                <input type="text" class="form-control" placeholder="Enter your name">
+              </div>
+  
+              <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-control" placeholder="Enter your email">
+              </div>
+  
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="4"
+                          placeholder="Write your message here"></textarea>
+              </div>
+  
+              <button type="submit"
+                      class="btn px-5"
+                      style="background:#d9a441;color:#fff;">
+                Send Message
+              </button>
+  
+            </form>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+   <!-- Footer -->
+   <footer class="pt-5" style="background:#111;">
+    <div class="container">
+      <div class="row g-4">
+  
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3 text-white">Elegance Store</h5>
+          <p class="text-secondary">
+            A modern women’s boutique inspired by seasonal elegance
+            and timeless style.
+          </p>
+        </div>
+  
+        <div class="col-md-2">
+          <h6 class="fw-semibold mb-3 text-white">Shop</h6>
+          <ul class="list-unstyled">
+            <li><a class="text-light opacity-75 text-decoration-none" href="#">All Products</a></li>
+            <li><a class="text-light opacity-75 text-decoration-none" href="#">New Arrivals</a></li>
+            <li><a class="text-light opacity-75 text-decoration-none" href="#">Best Sellers</a></li>
+            <li><a class="text-light opacity-75 text-decoration-none" href="#">Sale</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-3">
+          <h6 class="fw-semibold mb-3 text-white">Information</h6>
+          <ul class="list-unstyled">
+            <li><a class="text-light opacity-75 text-decoration-none" href="#">About Us</a></li>
+            <li><a class="text-light opacity-75 text-decoration-none" href="#">Contact</a></li>
+            <li><a class="text-light opacity-75 text-decoration-none" href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-3">
+          <h6 class="fw-semibold mb-3 text-white">Follow Us</h6>
+          <div class="d-flex gap-3 fs-5 text-light opacity-75">
+            📷 📘 🐦 ▶
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="border-top border-secondary mt-4 py-3 text-center">
+        <p class="mb-0 text-secondary">
+          © 2026 Elegance Store. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+         
+
+  
+  <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
