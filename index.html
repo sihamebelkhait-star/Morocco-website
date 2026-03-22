@@ -1,773 +1,573 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Lunara Boutique</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morocco Up Close</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #fff;
+    /* Navbar custom style */
+    .navbar-custom {
+      background-image: url('images/image 50.jpg'); /* حطي هنا رابط الصورة ديال الخلفية */
+      background-size: cover;
+      background-position: center;
     }
-
-    /* HERO */
-    .hero {
-      min-height: 90vh;
-      background: linear-gradient(
-        rgba(0,0,0,0.45),
-        rgba(0,0,0,0.45)
-      ),
-      url("images/foto 32.jpeg") center/cover no-repeat;
-      display: flex;
-      align-items: center;
+    .navbar-custom .navbar-brand, 
+    .navbar-custom .nav-link {
+      color: #fff; /* اللون الكحل */
+      font-weight: 800; /* غليظة شوية */
     }
-
-    .hero h1 {
-      font-size: 3.2rem;
-      font-weight: 700;
-      letter-spacing: 1px;
+    .navbar-custom .nav-link:hover {
+      color: #333; /* لون عند hover */
     }
-
-    .hero p {
-      font-size: 1.1rem;
-      opacity: 0.9;
+    .navbar-brand img {
+      height: 80px; /* حجم اللوجو */
+      margin-right: 60px;
     }
-
-    .btn-main {
-      background-color: #d9a441;
-      border: none;
-      color: #fff;
-      padding: 14px 32px;
-      font-weight: 500;
-    }
-
-    .btn-outline-light {
-      padding: 14px 32px;
-    }
-
-    /* QUICK SECTIONS */
-    .quick-box {
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 35px 20px;
-      transition: 0.3s ease;
-    }
-
-    .quick-box:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
-    }
-
-    .quick-box i {
-      font-size: 2.4rem;
-      color: #d9a441;
-    }
-
-    .quick-box h5 {
-      margin-top: 15px;
-      font-weight: 500;
-    }
-
-    /* SEASON BANNER */
-    .season-banner {
-      background: linear-gradient(135deg, #f5e6d0, #fff);
-      border-radius: 25px;
-      padding: 60px 30px;
-    }
-
-    /* REVIEWS */
-    .review {
-      background: #fff;
-      border-radius: 18px;
-      padding: 30px;
-    }
-
-    .stars {
-      color: #d9a441;
-    }
-    .bi {
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.bi:hover {
-  color: #d9a441;
-}
-/* ===== SHOP SECTION ===== */
-
-.shop-section {
-  padding: 20px;
-}
-
-.product-card {
-  width: 300px;
-  background: #fff;
-  border-radius: 20px;
-  padding: 15px;
-  text-align: center;
-}
-
-.product-img {
-  width: 100px;
-  height: 130px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  
-}
-
-
-</style>
+  </style>
 </head>
-
 <body>
 
-    <!-- TOP HEADER -->
-<section class="py-3 bg-white border-bottom">
+  <nav class="navbar navbar-expand-lg navbar-custom">
     <div class="container">
-      <div class="d-flex align-items-center justify-content-between">
-  
-        <!-- BRAND -->
-        <div class="fw-bold fs-4" style="letter-spacing:1px;">
-          Lunara
-        </div>
-  
-        <!-- ACTION ICONS -->
-        <div class="d-flex align-items-center gap-4">
-          <i class="bi bi-search fs-5"></i>
-          <i class="bi bi-person fs-5"></i>
-          <i class="bi bi-bag fs-5 position-relative">
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
-              0
-            </span>
-          </i>
-        </div>
-  
+      <!-- Logo + Title -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo maroc.png" alt="Logo"> <!-- حطي هنا رابط اللوجو -->
+        Morocco Up Close
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Region</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Culture & Food</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Festivals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </section>
-  
+  </nav>
+  <!-- Hero Section -->
+<section class="hero d-flex align-items-center text-white" style="min-height: 90vh; 
+background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), 
+            url('images/morocco image.jpg'); 
+background-size: cover; 
+background-position: center;">
+<div class="container text-center">
+<h1 class="display-4 fw-bold">Discover Morocco Up Close</h1>
+<p class="lead mt-3">Morocco is one of the world’s most beautiful destinations, where rich history, vibrant culture, diverse landscapes, and authentic traditions come together. From ancient cities to stunning nature and unforgettable flavors, Morocco offers a unique experience that attracts, inspires, and leaves a lasting impression on every visitor.</p>
+</div>
+</section>
+<!-- SECTION About – Region – Culture & Food -->
+<section class="py-5"
+         style="background-image: url('images/foto 1234.jpg');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;">
 
-<!-- HERO SECTION -->
-<section class="hero text-white">
-  <div class="container text-center">
-    <h1>Lunara Boutique</h1>
-    <p class="mt-3">Elegance Designed for the Modern Woman</p>
+  <div class="container py-5">
+    <div class="row text-center justify-content-center">
 
-    <div class="mt-4">
-      <a href="#shop" class="btn btn-main me-3">Shop Now</a>
-      <a href="#contact" class="btn btn-outline-light">Contact Us</a>
+      <!-- ABOUT -->
+      <div class="col-md-4 mb-4">
+        <div class="p-3">
+          <img src="images/Morocco 10 Best Places to Visit.jpg"
+               alt="About"
+               class="img-fluid shadow-lg"
+               style="width:100%; 
+                      height:300px; 
+                      object-fit:cover; 
+                      border-radius:20px;">
+          <h4 class="fw-bold text-white mt-3">About</h4>
+        </div>
+      </div>
+
+      <!-- REGION -->
+      <div class="col-md-4 mb-4">
+        <div class="p-3">
+          <img src="images/img 1.jpg"
+               alt="Region"
+               class="img-fluid shadow-lg"
+               style="width:100%; 
+                      height:300px; 
+                      object-fit:cover; 
+                      border-radius:20px;">
+          <h4 class="fw-bold text-white mt-3">Region</h4>
+        </div>
+      </div>
+
+      <!-- CULTURE & FOOD -->
+      <div class="col-md-4 mb-4">
+        <div class="p-3">
+          <img src="images/za 12.jpg"
+               alt="Culture & Food"
+               class="img-fluid shadow-lg"
+               style="width:100%; 
+                      height:300px; 
+                      object-fit:cover; 
+                      border-radius:20px;">
+          <h4 class="fw-bold text-white mt-3">Culture & Food</h4>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+<section class="history-festival-section" style="background-image:url('images/moroc img.jpg'); background-size:cover; background-position:center; padding:50px 0; border-radius:0; margin-top:0;">
+  <!-- عنوان التاريخ -->
+  <h2 class="text-center fw-bold mb-5" style="color:black; margin-bottom:10px;">History Morocco</h2>
+
+  <!-- شريط Timeline -->
+  <div class="container mb-4 position-relative">
+    <div class="p-3 mx-auto" style="background:#d7b894; border-radius:25px; height:100px; position:relative;"> <!-- الشريط البني -->
+      <div class="row text-center align-items-end h-100" style="position:relative; z-index:1;">
+        <div class="col-6 col-md-3" style="position:relative; top: -35px;"> <!-- رفع الصور داخل الشريط -->
+          <span class="fw-bold d-block mb-1" style="color:black;">1900</span>
+          <img src="images/1900 Morocco.jpg" class="img-fluid" style="height:80px; width:100%; object-fit:cover; border-radius:15px;">
+        </div>
+        <div class="col-6 col-md-3" style="position:relative; top:-35px;">
+          <span class="fw-bold d-block mb-1" style="color:black;">1980</span>
+          <img src="images/morocco 1980.jpg" class="img-fluid" style="height:80px; width:100%; object-fit:cover; border-radius:15px;">
+        </div>
+        <div class="col-6 col-md-3" style="position:relative; top:-35px;">
+          <span class="fw-bold d-block mb-1" style="color:black;">2000</span>
+          <img src="images/Casablanca 2.jpg" class="img-fluid" style="height:80px; width:100%; object-fit:cover; border-radius:15px;">
+        </div>
+        <div class="col-6 col-md-3" style="position:relative; top:-35px;">
+          <span class="fw-bold d-block mb-1" style="color:black;">2025</span>
+          <img src="images/Casablanca 1.jpg" class="img-fluid" style="height:80px; width:100%; object-fit:cover; border-radius:15px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- عنوان المهرجانات -->
+  <h2 class="text-center fw-bold mb-4" style="color:white;">Festival Morocco</h2>
+
+  <!-- مستطيلات المهرجانات -->
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      <div class="col-6 col-md-4 col-lg-2">
+        <div style="background:#ead8b8; border-radius:15px; padding:10px;">
+          <img src="images/Boujlod Agadir Maroc.jpg" class="img-fluid mb-2" style="height:130px; width:100%; object-fit:cover; border-radius:12px;">
+          <h6 class="fw-bold text-center" style="color:black;">Festival Timitar</h6>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div style="background:#ead8b8; border-radius:15px; padding:10px;">
+          <img src="images/gnawa.jpg" class="img-fluid mb-2" style="height:130px; width:100%; object-fit:cover; border-radius:12px;">
+          <h6 class="fw-bold text-center" style="color:black;">Festival Gnaoua</h6>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div style="background:#ead8b8; border-radius:15px; padding:10px;">
+          <img src="images/tabourida.jpg" class="img-fluid mb-2" style="height:130px; width:100%; object-fit:cover; border-radius:12px;">
+          <h6 class="fw-bold text-center" style="color:black;">Festival Tabourida</h6>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div style="background:#ead8b8; border-radius:15px; padding:10px;">
+          <img src="images/marzouga.jpg" class="img-fluid mb-2" style="height:130px; width:100%; object-fit:cover; border-radius:12px;">
+          <h6 class="fw-bold text-center" style="color:black;">Festival Merzouga</h6>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div style="background:#ead8b8; border-radius:15px; padding:10px;">
+          <img src="images/Amazigh dance.jpg" class="img-fluid mb-2" style="height:130px; width:100%; object-fit:cover; border-radius:12px;">
+          <h6 class="fw-bold text-center" style="color:black;">Festival Amazigh</h6>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<!-- QUICK SECTIONS -->
-<section class="py-5">
+<!-- SECTION ABOUT -->
+<section class="py-5" style="background:#d8c3a5;">  <!-- خلفية الرمل -->
+
   <div class="container">
-    <div class="row g-4 text-center">
+    <div class="row align-items-center">
 
-      <div class="col-md-4">
-        <div class="quick-box">
-          <i class="bi bi-stars"></i>
-          <h5>New Arrivals</h5>
+      <!-- LEFT SIDE : TITLE + PARAGRAPH -->
+      <div class="col-md-6">
+
+        <!-- Title -->
+        <h2 class="fw-bold mb-4" style="color:#4b2f1c;">
+          Moroccan Traditional Clothing
+        </h2>
+
+        <!-- Paragraph -->
+        <div class="p-4" 
+             style="background:#e8d4b8; color:#000; font-weight:800px;">
+          Le vêtement traditionnel marocain est un symbole de l’identité culturelle,
+          mêlant élégance, histoire et savoir-faire artisanal. Chaque région possède
+          ses propres styles et couleurs, reflétant la richesse du patrimoine
+          marocain transmis à travers les générations.
+        </div>
+
+      </div>
+
+      <!-- RIGHT SIDE : IMAGE -->
+      <div class="col-md-6">
+
+        <img src="images/clothing maroc.jpg"
+             class="img-fluid"
+             style="border-radius:20px; width:100%; height:500px; object-fit:cover;">
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+<!-- ABOUT : Moroccan Dialects -->
+<section class="py-5" style="background:#c9b08a;"> <!-- بني فاتح -->
+
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- LEFT : IMAGE -->
+      <div class="col-md-6">
+        <img src="images/alph 12.jpg"
+             class="img-fluid"
+             style="width:100%; height:350px; object-fit:cover; border-radius:20px;"
+             alt="Moroccan Dialects">
+      </div>
+
+      <!-- RIGHT : TEXT BOX -->
+      <div class="col-md-6">
+
+        <div class="p-4"
+             style="background:#d8c3a5;"> <!-- رملي -->
+
+          <h3 class="fw-bold mb-3" style="color:#f3e1c4;">
+            Diversity of Moroccan Dialects
+          </h3>
+
+          <p style="color:#ffffff; font-weight:600; margin:0;">
+            Morocco is known for its rich linguistic diversity. Each region has
+            its own dialect influenced by history, culture, and local traditions.
+            This diversity reflects the cultural richness and unity of the
+            Moroccan people across different regions.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+<!-- ABOUT : Nature & Geography of Morocco -->
+<section class="py-5"
+  style="
+    background-image:url('images/desert 12.jpg');
+    background-size:cover;
+    background-position:center;
+  ">
+
+  <div class="container">
+
+    <!-- Title -->
+    <h2 class="text-center fw-bold mb-5" style="color:#000;">
+      Nature & Geography of Morocco
+    </h2>
+
+    <!-- Cards -->
+    <div class="row g-4">
+
+      <!-- Atlas Mountains -->
+      <div class="col-md-3">
+        <div class="p-3 h-100"
+             style="background:#c9b08a; border-radius:15px;">
+          <img src="images/mountains.jpg" class="img-fluid rounded mb-3"
+               style="height:180px; width:100%; object-fit:cover;">
+          <h5 class="fw-bold text-center">Atlas Mountains</h5>
         </div>
       </div>
 
-      <div class="col-md-4">
-        <div class="quick-box">
-          <i class="bi bi-fire"></i>
-          <h5>Best Sellers</h5>
+      <!-- Moroccan Seas -->
+      <div class="col-md-3">
+        <div class="p-3 h-100"
+             style="background:#c9b08a; border-radius:15px;">
+          <img src="images/seas.jpg" class="img-fluid rounded mb-3"
+               style="height:180px; width:100%; object-fit:cover;">
+          <h5 class="fw-bold text-center">Moroccan Seas</h5>
         </div>
       </div>
 
-      <div class="col-md-4">
-        <div class="quick-box">
-          <i class="bi bi-percent"></i>
-          <h5>Sales</h5>
+      <!-- Moroccan Desert -->
+      <div class="col-md-3">
+        <div class="p-3 h-100"
+             style="background:#c9b08a; border-radius:15px;">
+          <img src="images/sahara.jpg" class="img-fluid rounded mb-3"
+               style="height:180px; width:100%; object-fit:cover;">
+          <h5 class="fw-bold text-center">Moroccan Desert</h5>
+        </div>
+      </div>
+
+      <!-- Oases -->
+      <div class="col-md-3">
+        <div class="p-3 h-100"
+             style="background:#c9b08a; border-radius:15px;">
+          <img src="images/Oases.jpg" class="img-fluid rounded mb-3"
+               style="height:180px; width:100%; object-fit:cover;">
+          <h5 class="fw-bold text-center">Oases</h5>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- SECTION SERVICES -->
+<section id="services" class="py-5" style="background:#d8c3a5;">
+  <div class="container">
+
+    <!-- Title -->
+    <h2 class="text-center fw-bold mb-5" style="color:#4b2f1c;">
+      Our Services
+    </h2>
+
+    <!-- Cards Grid -->
+    <div class="row g-4">
+
+      <!-- Service 1 -->
+      <div class="col-md-3">
+        <div class="card h-100 border-0 shadow-sm"
+             style="background:#e8d4b8; border-radius:20px;">
+          <img src="images/Culture.jpg" class="card-img-top"
+               style="height:180px; object-fit:cover; border-radius:20px 20px 0 0;">
+          <div class="card-body text-center">
+            <h5 class="fw-bold" style="color:#4b2f1c;">Cultural Discovery</h5>
+            <p class="fw-semibold text-dark">
+              Explore Moroccan traditions, lifestyle and authentic heritage.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="col-md-3">
+        <div class="card h-100 border-0 shadow-sm"
+             style="background:#e8d4b8; border-radius:20px;">
+          <img src="images/food moroc.jpg" class="card-img-top"
+               style="height:180px; object-fit:cover; border-radius:20px 20px 0 0;">
+          <div class="card-body text-center">
+            <h5 class="fw-bold" style="color:#4b2f1c;">Gastronomy Tours</h5>
+            <p class="fw-semibold text-dark">
+              Taste traditional Moroccan food and culinary experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="col-md-3">
+        <div class="card h-100 border-0 shadow-sm"
+             style="background:#e8d4b8; border-radius:20px;">
+          <img src="images/historical.jpg" class="card-img-top"
+               style="height:180px; object-fit:cover; border-radius:20px 20px 0 0;">
+          <div class="card-body text-center">
+            <h5 class="fw-bold" style="color:#4b2f1c;">Historical Sites</h5>
+            <p class="fw-semibold text-dark">
+              Visit Morocco’s most iconic historical landmarks.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="col-md-3">
+        <div class="card h-100 border-0 shadow-sm"
+             style="background:#e8d4b8; border-radius:20px;">
+          <img src="images/Adventures.jpg" class="card-img-top"
+               style="height:180px; object-fit:cover; border-radius:20px 20px 0 0;">
+          <div class="card-body text-center">
+            <h5 class="fw-bold" style="color:#4b2f1c;">Nature Adventures</h5>
+            <p class="fw-semibold text-dark">
+              Discover mountains, deserts and Moroccan landscapes.
+            </p>
+          </div>
         </div>
       </div>
 
     </div>
   </div>
 </section>
-
-<!-- SEASONAL OFFER -->
-<section class="py-5">
+<!-- SECTION CONTACT -->
+<section id="contact" class="py-5" style="background:#e8d4b8;">
   <div class="container">
-    <div class="season-banner text-center">
-      <h2 class="fw-bold">Seasonal Collection 2026</h2>
-      <p class="mt-3">Exclusive styles crafted for elegance and comfort</p>
-      <a href="#" class="btn btn-main mt-3">Discover More</a>
-    </div>
-  </div>
-</section>
 
-<!-- REVIEWS -->
-<section class="py-5">
-  <div class="container">
-    <h3 class="text-center mb-4">Our Happy Customers</h3>
+    <!-- Title -->
+    <h2 class="text-center fw-bold mb-5" style="color:#4b2f1c;">
+      Contact Us
+    </h2>
 
     <div class="row g-4">
 
+      <!-- LEFT : CONTACT INFO -->
       <div class="col-md-4">
-        <div class="review">
-          <p>"Amazing quality and elegant design. I loved everything!"</p>
-          <div class="stars">★★★★★</div>
+
+        <div class="p-4 h-100 shadow-sm"
+             style="background:#d8c3a5; border-radius:20px;">
+
+          <h4 class="fw-bold mb-4" style="color:#4b2f1c;">Get in Touch</h4>
+
+          <p class="fw-semibold text-dark mb-3">
+            <i class="bi bi-geo-alt-fill me-2"></i>
+            Marrakech, Morocco
+          </p>
+
+          <p class="fw-semibold text-dark mb-3">
+            <i class="bi bi-telephone-fill me-2"></i>
+            +212 6 12 34 56 78
+          </p>
+
+          <p class="fw-semibold text-dark">
+            <i class="bi bi-envelope-fill me-2"></i>
+            contact@morocco.com
+          </p>
+
         </div>
+
       </div>
 
+      <!-- CENTER : FORM -->
       <div class="col-md-4">
-        <div class="review">
-          <p>"Fast delivery and beautiful packaging. Highly recommended."</p>
-          <div class="stars">★★★★★</div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="review">
-          <p>"Perfect styles for modern women. I will order again."</p>
-          <div class="stars">★★★★★</div>
-        </div>
-      </div>
 
-    </div>
-  </div>
-</section>
+        <div class="p-4 h-100 shadow-sm"
+             style="background:#ffffff; border-radius:20px;">
 
-<!-- SHOP SECTION -->
-<section id="shop" class="py-5" style="background:#faf9f7;">
-  <div class="container">
+          <h4 class="fw-bold mb-4 text-center" style="color:#4b2f1c;">
+            Send a Message
+          </h4>
 
-    <!-- TITLE -->
-    <div class="text-center mb-5">
-      <h2 class="fw-bold">Shop Our Collection</h2>
-      <p class="text-muted">Carefully selected pieces for modern women</p>
-    </div>
-
-    <div class="row">
-
-      <!-- FILTERS -->
-      <div class="col-lg-3 mb-4">
-        <div class="p-4 bg-white rounded-4">
-          <h5 class="mb-4">Filter</h5>
-
-          <div class="mb-3">
-            <label class="form-label">Category</label>
-            <select class="form-select">
-              <option>All</option><option>Dresses</option><option>Bags</option>
-              <option>Shoes</option><option>Accessories</option>
-            </select>
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label">Price</label>
-            <select class="form-select">
-              <option>All</option><option>Under $50</option>
-              <option>$50 – $100</option><option>Above $100</option>
-            </select>
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label">Size</label>
-            <select class="form-select">
-              <option>All</option><option>S</option><option>M</option>
-              <option>L</option><option>XL</option>
-            </select>
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label">Color</label>
-            <select class="form-select">
-              <option>All</option><option>Beige</option>
-              <option>Black</option><option>White</option><option>Pink</option>
-            </select>
-          </div>
-
-          <button class="btn w-100" style="background:#d9a441;color:#fff;">
-            Apply Filters
-          </button>
-          <!-- EXTRA SECTION UNDER FILTER -->
-<div class="mt-4 p-3 bg-white rounded-4 text-center">
-
-  <h6 class="fw-bold mb-2">Special Offer</h6>
-
-  <p class="text-muted small mb-3">
-    Free delivery on orders over $100
-  </p>
-
-  <img src="images/foto 40.jpeg"
-       class="img-fluid rounded-3 mb-3"
-       alt="Special Offer">
-
-  <button class="btn btn-sm w-100"
-          style="background:#d9a441;color:#fff;">
-    Shop Now
-  </button>
-
-</div>
-
-        </div>
-      </div>
-
-      <!-- PRODUCTS -->
-      <div class="col-lg-9">
-        <div class="row g-4">
-
-          <!-- PRODUCT 1 -->
-          <div class="col-md-6">
-            <div class="bg-white rounded-4 p-3 text-center h-100 product-card">
-              <img src="images/foto 35.jpeg" class="product-img rounded-3 mb-3" alt="Elegant Dress">
-              <h6 class="mb-1">Elegant Dress</h6>
-              <p class="fw-semibold" style="color:#d9a441;">$89.00</p>
-              <button class="btn btn-sm w-100" style="background:#d9a441;color:#fff;">Add to Cart</button>
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name">
             </div>
-          </div>
 
-          <!-- PRODUCT 2 -->
-          <div class="col-md-6">
-            <div class="bg-white rounded-4 p-3 text-center h-100 product-card">
-              <img src="images/foto 33.jpeg" class="product-img rounded-3 mb-3" alt="Luxury Handbag">
-              <h6 class="mb-1">Luxury Handbag</h6>
-              <p class="fw-semibold" style="color:#d9a441;">$120.00</p>
-              <button class="btn btn-sm w-100" style="background:#d9a441;color:#fff;">Add to Cart</button>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email">
             </div>
-          </div>
 
-          <!-- PRODUCT 3 -->
-          <div class="col-md-6">
-            <div class="bg-white rounded-4 p-3 text-center h-100 product-card">
-              <img src="images/foto 36.jpeg" class="product-img rounded-3 mb-3" alt="Modern Shoes">
-              <h6 class="mb-1">Modern Shoes</h6>
-              <p class="fw-semibold" style="color:#d9a441;">$75.00</p>
-              <button class="btn btn-sm w-100" style="background:#d9a441;color:#fff;">Add to Cart</button>
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
             </div>
-          </div>
 
-          <!-- PRODUCT 4 -->
-          <div class="col-md-6">
-            <div class="bg-white rounded-4 p-3 text-center h-100 product-card">
-              <img src="images/foto 37.jpeg" class="product-img rounded-3 mb-3" alt="Satin Evening Dress">
-              <h6 class="mb-1">Satin Evening Dress</h6>
-              <p class="fw-semibold" style="color:#d9a441;">$140.00</p>
-              <button class="btn btn-sm w-100" style="background:#d9a441;color:#fff;">Add to Cart</button>
-            </div>
-          </div>
-
-          <!-- PRODUCT 5 -->
-          <div class="col-md-6">
-            <div class="bg-white rounded-4 p-3 text-center h-100 product-card">
-              <img src="images/foto 39.jpeg" class="product-img rounded-3 mb-3" alt="Minimal Necklace">
-              <h6 class="mb-1">Minimal Necklace</h6>
-              <p class="fw-semibold" style="color:#d9a441;">$39.00</p>
-              <button class="btn btn-sm w-100" style="background:#d9a441;color:#fff;">Add to Cart</button>
-            </div>
-          </div>
-
-          <!-- PRODUCT 6 -->
-          <div class="col-md-6">
-            <div class="bg-white rounded-4 p-3 text-center h-100 product-card">
-              <img src="images/foto 38.jpeg" class="product-img rounded-3 mb-3" alt="Casual Chic Set">
-              <h6 class="mb-1">Casual Chic Set</h6>
-              <p class="fw-semibold" style="color:#d9a441;">$99.00</p>
-              <button class="btn btn-sm w-100" style="background:#d9a441;color:#fff;">Add to Cart</button>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-  <!-- SEASONAL OFFER -->
-<section class="py-5" style="background:linear-gradient(135deg,#f6efe6,#ffffff);">
-    <div class="container">
-  
-      <div class="row align-items-center g-4">
-  
-        <!-- TEXT -->
-        <div class="col-lg-6">
-          <span class="badge mb-3" style="background:#d9a441;">
-            Limited Time
-          </span>
-  
-          <h2 class="fw-bold mt-3">
-            Seasonal Collection 2026
-          </h2>
-  
-          <p class="text-muted mt-3">
-            Discover exclusive pieces designed especially for this season.
-            Elegant, feminine, and carefully selected to elevate your style.
-          </p>
-  
-          <div class="mt-4">
-            <a href="#shop" class="btn me-3"
-               style="background:#d9a441;color:#fff;padding:12px 30px;">
-              Shop the Collection
-            </a>
-  
-            <a href="#contact" class="btn btn-outline-dark px-4 py-2">
-              Contact Us
-            </a>
-          </div>
-        </div>
-  
-        <!-- VISUAL -->
-        <div class="col-lg-6 text-center">
-          <img src="images/foto 30.jpeg"
-               alt="Seasonal Collection"
-               class="img-fluid rounded-4"
-               style="max-height:450px; object-fit:cover;">
-        </div>
-        </div>
-  
-      </div>
-  
-    </div>
-  </section>
-<!-- REVIEWS SECTION -->
-<section class="py-5" style="background:#faf9f7;">
-    <div class="container">
-  
-      <!-- TITLE -->
-      <div class="text-center mb-5">
-        <h2 class="fw-bold">What Our Customers Say</h2>
-        <p class="text-muted">Real experiences from women who love our products</p>
-      </div>
-  
-      <div class="row g-4">
-  
-        <!-- REVIEW 1 -->
-        <div class="col-md-4">
-          <div class="bg-white p-4 rounded-4 h-100 text-center">
-            <div class="mb-3" style="color:#d9a441;font-size:1.2rem;">
-              ★★★★★
-            </div>
-            <p class="text-muted">
-              “Amazing quality and elegant style. I was impressed from the first order.”
-            </p>
-            <h6 class="fw-semibold mt-3">Sarah M.</h6>
-          </div>
-        </div>
-  
-        <!-- REVIEW 2 -->
-        <div class="col-md-4">
-          <div class="bg-white p-4 rounded-4 h-100 text-center">
-            <div class="mb-3" style="color:#d9a441;font-size:1.2rem;">
-              ★★★★★
-            </div>
-            <p class="text-muted">
-              “Fast delivery and beautiful packaging. Everything feels premium.”
-            </p>
-            <h6 class="fw-semibold mt-3">Lina K.</h6>
-          </div>
-        </div>
-  
-        <!-- REVIEW 3 -->
-        <div class="col-md-4">
-          <div class="bg-white p-4 rounded-4 h-100 text-center">
-            <div class="mb-3" style="color:#d9a441;font-size:1.2rem;">
-              ★★★★★
-            </div>
-            <p class="text-muted">
-              “Perfect fit and very comfortable. I will definitely order again.”
-            </p>
-            <h6 class="fw-semibold mt-3">Amal R.</h6>
-          </div>
-        </div>
-  
-      </div>
-    </div>
-  </section>
-<!-- About Us Section -->
-<section id="about" class="py-4 bg-light">
-    <div class="container">
-      <div class="row align-items-center g-5">
-  
-        <!-- Image -->
-        <div class="col-md-4">
-          <img src="images/foto 43.jpeg" class="img-fluid rounded-4 shadow" alt="About us">
-        </div>
-  
-        <!-- Text -->
-        <div class="col-md-8">
-          <h6 class="text-uppercase text-muted mb-2">About Us</h6>
-          <h2 class="fw-bold mb-4">
-            Elegance Inspired by the Seasons
-          </h2>
-  
-          <p class="text-muted mb-3">
-            Our brand was created with one goal in mind: to celebrate modern femininity
-            through carefully selected seasonal collections.
-          </p>
-  
-          <p class="text-muted mb-4">
-            Each piece is chosen for its quality, comfort, and timeless elegance,
-            helping you feel confident and beautiful every day.
-          </p>
-  
-          <div class="d-flex gap-3">
-            <a href="#shop" class="btn btn-dark px-4">
-              Explore Collection
-            </a>
-            <a href="#contact" class="btn btn-outline-dark px-4">
-              Contact Us
-            </a>
-          </div>
-        </div>
-  
-      </div>
-    </div>
-  </section>
-<!-- About Us Section -->
-<section id="about" class="py-4 bg-light">
-    <div class="container">
-      <div class="row align-items-center g-5">
-  
-        <!-- Image -->
-        <div class="col-md-4">
-          <img src="images/foto 44.jpeg" class="img-fluid rounded-4 shadow" alt="About us">
-        </div>
-  
-        <!-- Text -->
-        <div class="col-md-8">
-          <h6 class="text-uppercase text-muted mb-2">About Us</h6>
-          <h2 class="fw-bold mb-4">
-            Elegance Inspired by the Seasons
-          </h2>
-  
-          <p class="text-muted mb-3">
-            Our brand was created with one goal in mind: to celebrate modern femininity
-            through carefully selected seasonal collections.
-          </p>
-  
-          <p class="text-muted mb-4">
-            Each piece is chosen for its quality, comfort, and timeless elegance,
-            helping you feel confident and beautiful every day.
-          </p>
-  
-          <div class="d-flex gap-3">
-            <a href="#shop" class="btn btn-dark px-4">
-              Explore Collection
-            </a>
-            <a href="#contact" class="btn btn-outline-dark px-4">
-              Contact Us
-            </a>
-          </div>
-        </div>
-  
-      </div>
-    </div>
-  </section>
-<!-- WHY CHOOSE US -->
-<section class="py-5" style="background:#faf9f7;">
-    <div class="container">
-  
-      <div class="text-center mb-5">
-        <h2 class="fw-bold">Why Choose Us</h2>
-        <p class="text-muted">What makes our boutique special</p>
-      </div>
-  
-      <div class="row g-4 text-center">
-  
-        <div class="col-md-4">
-          <div class="bg-white p-4 rounded-4 h-100">
-            <div class="mb-3 fs-2" style="color:#d9a441;">★</div>
-            <h6 class="fw-semibold">Premium Quality</h6>
-            <p class="text-muted">
-              Carefully selected pieces with high-quality materials.
-            </p>
-          </div>
-        </div>
-  
-        <div class="col-md-4">
-          <div class="bg-white p-4 rounded-4 h-100">
-            <div class="mb-3 fs-2" style="color:#d9a441;">🚚</div>
-            <h6 class="fw-semibold">Fast Delivery</h6>
-            <p class="text-muted">
-              Quick and reliable delivery right to your door.
-            </p>
-          </div>
-        </div>
-  
-        <div class="col-md-4">
-          <div class="bg-white p-4 rounded-4 h-100">
-            <div class="mb-3 fs-2" style="color:#d9a441;">❤</div>
-            <h6 class="fw-semibold">Customer Care</h6>
-            <p class="text-muted">
-              We care about every detail and every customer.
-            </p>
-          </div>
-        </div>
-  
-      </div>
-    </div>
-  </section>
-<!-- NEWSLETTER -->
-<section class="py-5">
-    <div class="container">
-      <div class="bg-white rounded-4 p-5 text-center shadow-sm">
-  
-        <h3 class="fw-bold mb-3">
-          Join Our Community
-        </h3>
-  
-        <p class="text-muted mb-4">
-          Be the first to discover new collections and exclusive offers.
-        </p>
-  
-        <form class="row justify-content-center g-2">
-          <div class="col-md-4">
-            <input type="email" class="form-control"
-                   placeholder="Enter your email">
-          </div>
-          <div class="col-md-2">
-            <button type="submit"
-                    class="btn w-100"
-                    style="background:#d9a441;color:#fff;">
-              Subscribe
-            </button>
-          </div>
-        </form>
-  
-      </div>
-    </div>
-  </section>
-    <!-- Contact Section -->
-<section id="contact" class="py-5 bg-light">
-    <div class="container">
-  
-      <!-- Title -->
-      <div class="text-center mb-5">
-        <h2 class="fw-bold">Contact Us</h2>
-        <p class="text-muted">
-          We’d love to hear from you. Feel free to get in touch.
-        </p>
-      </div>
-  
-      <div class="row g-4 align-items-center">
-  
-        <!-- Contact Info -->
-        <div class="col-md-5">
-          <div class="p-4 bg-white rounded-4 h-100 shadow-sm">
-            <h5 class="fw-semibold mb-4">Get in Touch</h5>
-  
-            <p class="text-muted mb-3">
-              Have a question about our products, orders, or delivery?
-              Our team is here to help.
-            </p>
-  
-            <ul class="list-unstyled text-muted">
-              <li class="mb-3">
-                📍 <strong>Location:</strong> Morocco
-              </li>
-              <li class="mb-3">
-                📧 <strong>Email:</strong> contact@yourstore.com
-              </li>
-              <li class="mb-3">
-                📞 <strong>Phone:</strong> +212 6 00 00 00 00
-              </li>
-            </ul>
-          </div>
-        </div>
-  
-        <!-- Contact Form -->
-        <div class="col-md-7">
-          <div class="p-4 bg-white rounded-4 shadow-sm">
-            <form>
-  
-              <div class="mb-3">
-                <label class="form-label">Your Name</label>
-                <input type="text" class="form-control" placeholder="Enter your name">
-              </div>
-  
-              <div class="mb-3">
-                <label class="form-label">Email Address</label>
-                <input type="email" class="form-control" placeholder="Enter your email">
-              </div>
-  
-              <div class="mb-3">
-                <label class="form-label">Message</label>
-                <textarea class="form-control" rows="4"
-                          placeholder="Write your message here"></textarea>
-              </div>
-  
-              <button type="submit"
-                      class="btn px-5"
-                      style="background:#d9a441;color:#fff;">
+            <div class="d-grid">
+              <button type="submit" class="btn fw-bold"
+                style="background:#4b2f1c; color:#fff; border-radius:30px;">
                 Send Message
               </button>
-  
-            </form>
-          </div>
+            </div>
+          </form>
+
         </div>
-  
+
       </div>
+
+      <!-- RIGHT : MAP -->
+      <div class="col-md-4">
+
+        <div class="h-100 shadow-sm"
+             style="border-radius:20px; overflow:hidden;">
+
+          <iframe
+            src="https://www.google.com/maps?q=Marrakech%20Morocco&output=embed"
+            width="100%" height="100%" style="border:0;"
+            allowfullscreen="" loading="lazy">
+          </iframe>
+
+        </div>
+
+      </div>
+
     </div>
-  </section>
-   <!-- Footer -->
-   <footer class="pt-5" style="background:#111;">
-    <div class="container">
-      <div class="row g-4">
-  
-        <div class="col-md-4">
-          <h5 class="fw-bold mb-3 text-white">Elegance Store</h5>
-          <p class="text-secondary">
-            A modern women’s boutique inspired by seasonal elegance
-            and timeless style.
-          </p>
-        </div>
-  
-        <div class="col-md-2">
-          <h6 class="fw-semibold mb-3 text-white">Shop</h6>
-          <ul class="list-unstyled">
-            <li><a class="text-light opacity-75 text-decoration-none" href="#">All Products</a></li>
-            <li><a class="text-light opacity-75 text-decoration-none" href="#">New Arrivals</a></li>
-            <li><a class="text-light opacity-75 text-decoration-none" href="#">Best Sellers</a></li>
-            <li><a class="text-light opacity-75 text-decoration-none" href="#">Sale</a></li>
-          </ul>
-        </div>
-  
-        <div class="col-md-3">
-          <h6 class="fw-semibold mb-3 text-white">Information</h6>
-          <ul class="list-unstyled">
-            <li><a class="text-light opacity-75 text-decoration-none" href="#">About Us</a></li>
-            <li><a class="text-light opacity-75 text-decoration-none" href="#">Contact</a></li>
-            <li><a class="text-light opacity-75 text-decoration-none" href="#">Privacy Policy</a></li>
-          </ul>
-        </div>
-  
-        <div class="col-md-3">
-          <h6 class="fw-semibold mb-3 text-white">Follow Us</h6>
-          <div class="d-flex gap-3 fs-5 text-light opacity-75">
-            📷 📘 🐦 ▶
-          </div>
-        </div>
-  
-      </div>
-  
-      <div class="border-top border-secondary mt-4 py-3 text-center">
-        <p class="mb-0 text-secondary">
-          © 2026 Elegance Store. All rights reserved.
+
+  </div>
+</section>
+<!-- FOOTER -->
+<footer class="pt-5 pb-3" style="background:#4b2f1c; color:#f3e1c4;">
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <!-- About -->
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3">Morocco Up Close</h5>
+        <p class="fw-semibold">Morocco is one of the world’s most beautiful destinations, where rich history, vibrant culture, diverse landscapes, and authentic traditions come together. From ancient cities to stunning nature and unforgettable flavors, Morocco offers a unique experience that attracts, inspires, and leaves a lasting impression on every visitor.
         </p>
       </div>
+
+      <!-- Links -->
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3">Quick Links</h5>
+        <ul class="list-unstyled fw-semibold">
+          <li class="mb-2"><a href="#home" class="text-decoration-none text-light">Home</a></li>
+          <li class="mb-2"><a href="#about" class="text-decoration-none text-light">About</a></li>
+          <li class="mb-2"><a href="#services" class="text-decoration-none text-light">Services</a></li>
+          <li class="mb-2"><a href="#contact" class="text-decoration-none text-light">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3">Contact</h5>
+        <p class="fw-semibold mb-2">
+          <i class="bi bi-geo-alt-fill me-2"></i>Marrakech, Morocco
+        </p>
+        <p class="fw-semibold mb-2">
+          <i class="bi bi-telephone-fill me-2"></i>+212 6 12 34 56 78
+        </p>
+        <p class="fw-semibold">
+          <i class="bi bi-envelope-fill me-2"></i>contact@morocco.com
+        </p>
+      </div>
+
     </div>
-  </footer>
-  
-         
 
-  
-  <!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Divider -->
+    <hr class="my-4" style="border-color:#f3e1c4;">
+
+    <!-- Bottom -->
+    <div class="text-center fw-semibold">
+      © 2025 Morocco Up Close. All rights reserved.
+    </div>
+
+  </div>
+</footer>
+
+<!-- Bootstrap Icons CDN (إذا مازال ما زدتيهش) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 
+<!-- Bootstrap Icons CDN (إذا مازال ما زدتيهش) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+<!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
